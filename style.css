@@ -1,0 +1,556 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: oppp;
+    src: url(Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: opp;
+    src: url(Poppins-Medium.ttf);
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+    height: 3300px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 22px 0px 0px 215px;
+    
+}
+
+.header a {
+    text-decoration: none;
+    color: #0e0e0e;
+    font-family: opp;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin-left: 18px;
+}
+
+
+.nav-control {
+    margin-left: 420px;
+}
+
+.nav-control a {
+    text-decoration: none;
+    color: #9822ff;
+    font-family: opp;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin-left: 20px;
+    display: inline-block;
+    opacity: 89%;
+}
+
+.nav-control a::after {
+    content: "";
+    border-bottom: 1px solid #9822ff;
+    display: block;
+    transform: scaleX(0);
+    transition: 250ms ease-in-out;
+}
+
+.nav-control a:hover:after {
+    transform: scaleX(1);
+    transition: 250ms ease-in-out;
+}
+
+.nav-control a:hover {
+    
+    opacity: 100%;
+}
+
+
+
+.login {
+    margin-left: 95px;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    font-family: oppp;
+    font-size: 13px;
+    background-color: #9822ff;
+    padding: 5px 21px 2px 21px;
+    border-radius: 8px;letter-spacing: 0.8px;
+}
+
+.trial {
+    margin-left: 15px;
+}
+
+.trial a {
+    text-decoration: none;
+    color: #9822ff;
+    font-family: opp;
+    font-size: 13px;
+    border: solid 1px #9822ff;
+    padding: 4px 14px 1px 14px;
+    border-radius: 8px;
+}
+
+.text {
+    margin: 125px 0px 0px 100px;
+}
+
+.text h1 {
+    color: black;
+    font-family: opp;
+    font-size: 49px;
+    line-height: 1.1;
+    letter-spacing: 0.6px;
+}
+
+.text p {
+    color: black;
+    font-family: poppins;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    position: relative;
+    top: -11px;
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+    background-color: #9822ff;
+    padding: 8px 22px 8px 22px;
+    font-size: 10px;
+    font-family: oppp;
+    letter-spacing: 0.6px;
+    border-radius: 13px;
+    position: relative;
+    top: 5px;
+    opacity: 89%;
+}
+
+.text a:hover {
+    opacity: 100%;
+}
+
+.col-all-4 {
+    display: flex;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+    margin-left: 70px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.col-1 {
+    background-color: #9822ff;
+    padding: 47px 85px 47px 85px;
+    transition: 0.5s;
+    line-height: 0.5;
+}
+
+.col-1:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.col-1 h2 {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.6px;
+    font-size: 39px;
+}
+
+.col-1 p {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.9px;
+    font-size: 17px;
+}
+
+.col-2 {
+    background-color: #f28613;
+    padding: 47px 85px 47px 85px;
+    line-height: 0.5;
+    transition: 0.5s;
+
+}
+
+.col-2 h2 {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.6px;
+    font-size: 39px;
+}
+
+.col-2 p {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.9px;
+    font-size: 17px;
+}
+
+.col-2:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.col-3 {
+    background-color: #07ac72;
+    padding: 47px 85px 47px 85px;
+    line-height: 0.5;
+    transition: 0.5s;
+}
+
+.col-3 h2 {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.6px;
+    font-size: 39px;
+}
+
+.col-3 p {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.9px;
+    font-size: 17px;
+}
+
+.col-3:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.col-4 {
+    background-color: #13abf2;
+    padding: 47px 85px 47px 85px;
+    line-height: 0.5;
+    transition: 0.5s;
+
+}
+
+.col-4 h2 {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.6px;
+    font-size: 39px;
+}
+
+.col-4 p {
+    color: white;
+    font-family: oppp ;
+    letter-spacing: 0.9px;
+    font-size: 17px;
+    display: flex;
+}
+
+.col-4:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.info-col-all {
+    display: flex;
+    margin-top: 70px;
+}
+
+.desk-info {
+    
+    
+    margin-left: 90px;
+    
+    margin-bottom: 90px;
+}
+
+.desk-info h1 {
+    color: black;
+    font-family: opp;
+    font-size: 50px;
+    line-height: 1.2;
+
+}
+
+.desk-info h3 {
+    color: rgb(197, 52, 52);
+    font-family: oppp;
+    font-size: 16px;
+    letter-spacing: 2.2px;
+    position: relative;
+    top: 30px;
+}
+
+.desk-info p {
+    color: black;
+    font-family: oppp;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+}
+
+.col-desk {
+    margin: 40px 0px 0px 37px;
+}
+
+.advanced, .premier, .managed {
+    display: flex;
+    margin: 20px 0px 0px 50px;
+    background-color: #fff;
+    width: 700px;
+    padding: 13px 0px 13px 0px ;
+    border-radius: 6px;
+    transition: 0.4s;
+    opacity: 89%;
+}
+
+.ttxt1 {
+    margin: 16px 0px 0px 40px;
+    line-height: 0.3;
+}
+
+.ttxt1 h3 {
+    color: black;
+    letter-spacing: 0.6px;
+    font-family: oppp;
+}
+
+.ttxt1 p {
+    font-family: oppp;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
+.ttxt2 {
+    margin: 16px 0px 0px 40px;
+    line-height: 0.3;
+}
+
+.ttxt2 h3 {
+    color: black;
+    letter-spacing: 0.6px;
+    font-family: oppp;
+}
+
+.ttxt2 p {
+    font-family: oppp;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
+.ttxt3 {
+    margin: 16px 0px 0px 40px;
+    line-height: 0.3;
+}
+
+.ttxt3 h3 {
+    color: black;
+    letter-spacing: 0.6px;
+    font-family: oppp;
+}
+
+.ttxt3 p {
+    font-family: oppp;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+}
+
+.advanced:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+.premier:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+.managed:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
+    opacity: 100%;
+}
+
+.body-desk {
+    text-align: center;
+    
+}
+
+.body-desk h1 {
+    font-family: poppins;
+    font-size: 47px;
+    letter-spacing: 0.6px;
+    color: rgb(29, 29, 29);
+    line-height: 1;
+}
+
+.body-desk p {
+    font-family: oppp;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.header-text-center {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.header-text-center h1 {
+    font-family: poppins;
+    font-size: 47px;
+    letter-spacing: 0.6px;
+    color: rgb(29, 29, 29);
+    line-height: 1;
+}
+
+.header-text-center p {
+    font-family: oppp;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.grid-box-3-all {
+    display: flex;
+    margin-top: 80px;
+}
+
+.grid1, .grid2, .grid3 {
+    margin-left: 110px;
+    background-color: #fff;;
+    padding: 31px 50px 31px 50px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.grid1:hover, .grid2:hover, .grid3:hover {
+    transition: 0.4s;
+    transform: scale(1.04);
+}
+
+.grid1 h3, .grid2 h3, .grid3 h3 {
+    font-family: opp;
+    letter-spacing: 0.4px;
+}
+
+.grid1 p, .grid2 p, .grid3 p {
+    font-family: oppp;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.grid1 a, .grid2 a, .grid3 a {
+    margin: 17px 0px 0px 188px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.grid1 h2, .grid2 h2, .grid3 h2 {
+    position: relative;
+    top: -15px
+}
+
+.footer-col-4 {
+    display: flex;
+    margin-top: 140px;
+}
+
+.foo-desk2 a, .foo-desk3 a {
+    display: block;
+}
+
+.foo-desk1, .foo-desk2, .foo-desk3, .foo-desk4 {
+    margin-left: 110px;
+}
+
+.foo-desk2, .foo-desk3, .foo-desk4 {
+    margin-left: 120px;
+}
+
+.foo-desk1 h3, .foo-desk2 h3, .foo-desk3 h3, .foo-desk4 h3 {
+    font-family: opp;
+    font-size: 19px;
+    letter-spacing: 0.4px;
+}
+
+.foo-desk1 p {
+    font-family: oppp;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+.foo-desk2 a, .foo-desk3 a {
+    text-decoration: none;
+    font-family: oppp;
+    font-size: 12px;
+    line-height: 2.2;
+    opacity: 87%;
+}
+
+.foo-desk2 a:hover, .foo-desk3 a:hover {
+    opacity: 100%;
+}
+
+.foo-desk4 a {
+    color: black;
+    margin-left: 6px;
+    opacity: 66%;
+}
+
+.foo-desk4 a:hover {
+    opacity: 100%;
+    transition: 0.6s;
+}
+
+.footer-serv {
+    display: flex;
+    margin: 20px 0px 0px 860px;
+}
+
+.footer-serv a {
+    text-decoration: none;
+    font-family: oppp;
+    font-size: 12px;
+    line-height: 2.2;
+    opacity: 87%;
+    margin-left: 20px;
+}
+
+.footer-serv p {
+    font-family: oppp;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin-left: 30px;
+    position: relative;
+    top: -7px;
+}
+
+/* display: inline-block;
+}
+
+.nav-bar a::after {
+    content: "";
+    border-bottom: 2px solid black;
+    display: block;
+    transform: scaleX(0);
+    transition: 250ms ease-in-out;
+}
+
+.nav-bar a:hover:after {
+    transform: scaleX(1);
+    transition: 250ms ease-in-out;
+}
+
+.nav-bar a:hover {
+    
+    opacity: 100%; */
